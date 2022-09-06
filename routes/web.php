@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('mainContent.index');
+})->name('index');
+
+
+
+Route::get('/categories/{category}',[\App\Http\Controllers\PortfolioController::class, 'showCategories'])->name('category');
+
+Route::fallback(function ()
+{
+    return redirect()->to('/');
 });
