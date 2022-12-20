@@ -12,6 +12,6 @@ class Files extends Model
 
     public function categories()
     {
-        return $this->belongsTo(Categories::class);
+        return $this->belongsTo(Subcategories::class);
     }
 }
