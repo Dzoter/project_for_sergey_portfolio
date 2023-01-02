@@ -1,4 +1,3 @@
-@extends('layout.layout')
 @section('header')
     <!-- ======= Header ======= -->
     <header id="header">

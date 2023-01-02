@@ -1,5 +1,3 @@
-@extends('layout.layout')
-
 @section('hero')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">

@@ -1,10 +1,5 @@
 @extends('layout.layout')
 
-
-
-
-
-
 @section('content')
 
     @yield('header', View::make('sections.header',['categories'=>$categoriesList]))
@@ -43,4 +38,5 @@
         @yield('contact', View::make('sections.contact'))
         @yield('contact')
     </main><!-- End #ma
-@endsection
+@endsection()
+
