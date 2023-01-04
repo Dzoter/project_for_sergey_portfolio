@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Subcategories;
+use App\Models\User;
 use App\Services\AddImgToSubCategoryService;
 use App\Services\AddSubCategoryService;
 use App\Services\ChangeCategoryOrderService;
@@ -59,6 +60,7 @@ class AdminController
     {
         $loginForm = $request->only('login', 'password');
         if (Auth::attempt(['login' => $loginForm['login'], 'password' => $loginForm['password']])) {
+            $request->session()->regenerate();
             return redirect()->route('admin');
         }
 

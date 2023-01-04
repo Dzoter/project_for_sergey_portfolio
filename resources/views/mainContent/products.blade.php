@@ -27,14 +27,14 @@
 
                         @foreach($files as $file)
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                                <a href="{{url(($file->path))}}" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox"
+                            <div style="background-color: white;" class="col-lg-4 col-md-6 portfolio-item filter-app d-flex justify-content-center flex-column">
+                                <a  href="{{url(($file->path))}}" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox d-flex justify-content-center"
                                    title="{{$file->name}}">
-                                    <img src="{{url($file->path)}}" class="img-fluid" alt="">
+                                    <img style="text-align: center; height: 234px"  src="{{url($file->path)}}" class="img-fluid" alt="">
                                 </a>
 
-                                <h2 class="text-center">{{$file->id}}</h2>
+                                <h4 class="text-center">{{$categories->name.'_'.$file->id}}</h4>
                             </div>
                         @endforeach
 

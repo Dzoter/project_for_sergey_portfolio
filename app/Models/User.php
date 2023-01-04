@@ -20,7 +20,7 @@ class User extends Authenticatable
     {
         return [
             'login'=>'Serega',
-            'password'=>'12345'
+            'password'=>'06102016KuZyA'
         ];
     }
 

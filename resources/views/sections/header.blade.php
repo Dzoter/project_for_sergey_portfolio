@@ -33,7 +33,7 @@
                                     class="bx bx-envelope"></i> <span>{{$category->name}}</span></a>
                         </li>
                     @endforeach
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Контакты</span></a>
                     </li>
                 </ul>
             </nav><!-- .nav-menu -->

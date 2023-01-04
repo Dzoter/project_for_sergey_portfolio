@@ -23,7 +23,7 @@ class CreateUserTable extends Migration
         });
 
         DB::table('users')->insert([
-            ['login' => 'Serega', 'password'=>Hash::make('12345')],
+            ['login' => 'Serega', 'password'=>Hash::make('06102016KuZyA')],
         ]);
     }
 
