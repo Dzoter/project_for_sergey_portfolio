@@ -5,20 +5,19 @@
 
             <div class="section-title">
                 <h2>Каталог</h2>
-                <p>В каталоге представлены более 7000 проектов. Это наработка за девять лет профессиональной
-                    деятельности.
-                    Любой проект можно изменить и доработать под Ваши пожелания.</p>
+                <p>В каталоге представлены более 2000 проектов. Это опыт професиональной деятельности более 9 лет. Любой
+                    проект дополняется и изменяется согласно вашим пожеланиям.</p>
             </div>
 
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                 @foreach($categories as $category)
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <a href="{{Route('category',$category->name)}}" class="portfolio-wrap d-block">
-                        <img src="{{url($category->path)}}" class="img-fluid" alt="">
-                    </a>
-                    <h1 class="text-center">{{$category->name}}</h1>
-                </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <a href="{{Route('category',$category->name)}}" class="portfolio-wrap d-block">
+                            <img src="{{url($category->path)}}" class="img-fluid" alt="">
+                        </a>
+                        <h3 class="text-center">{{$category->name}}</h3>
+                    </div>
 
                 @endforeach
 

@@ -12,7 +12,6 @@ class PortfolioController extends Controller
 
     public function showCategories($category)
     {
-
         $categoryObj = Categories::where('name','=', $category)->first();
         $subCategoryObj = Subcategories::where('name','=',$category)->first();
 
@@ -35,7 +34,6 @@ class PortfolioController extends Controller
             $sub = $subCategories->first();
 
             $files = Files::where('subcategories_id', $sub->id)->paginate(12);
-
             return view('mainContent.products', [
                 'files'         => $files,
                 'subCategories' => $subCategories,
